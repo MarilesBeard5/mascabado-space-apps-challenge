@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\yieldChangesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*LA ESTRUCTURA GENERAL DE LAS PETICIONES ES: Router::<metodo>(<url>, <[clase, funcion]>) // OPCIONAL: -> name('para asegurar el nombre del metodo poner el mismo')*/
+Route::get('index',  [yieldChangesController::class, 'index'])->name('register');
