@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\yieldChangesController;
+use App\Http\Controllers\ycCanadaWheatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
 /*LA ESTRUCTURA GENERAL DE LAS PETICIONES ES: Router::<metodo>(<url>, <[clase, funcion]>) // OPCIONAL: -> name('para asegurar el nombre del metodo poner el mismo')*/
 Route::get('index',  [yieldChangesController::class, 'index'])->name('index');
+Route::get('canadaWheat',  [ycCanadaWheatController::class, 'index'])->name('index');
