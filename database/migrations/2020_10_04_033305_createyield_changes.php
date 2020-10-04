@@ -14,7 +14,7 @@ class CreateyieldChanges extends Migration
     public function up()
     {
         Schema::create('yieldChanges', function (Blueprint $table) {
-            $table->integer('contry');
+            $table->integer('country');
             $table->integer('yearr');
             $table->string('esc');
             $table->integer('harvest');
