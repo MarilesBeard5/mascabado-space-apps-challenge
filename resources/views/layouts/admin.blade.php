@@ -45,16 +45,16 @@
         <aside class="menu-sidebar2">
             <div class="logo">
                 <a href="#">
-                    <img src="{{asset('img/icon/logoFortaleza.png')}}" alt="La Fortaleza" />
+                    <img src="{{asset('img/logo.jpeg')}}" alt="La Fortaleza" />
                 </a>
             </div>
             <div class="menu-sidebar2__content js-scrollbar1">
                 <div class="account2">
-                    <div class="image img-cir img-120">
-                        <img src="{{asset('img/icon/avatar-big-01.jpg')}}" alt="German Mariles"  />
+                    <div class="image img-cir img-custom">
+                        <img src="{{asset('img/MASCABADO.jpg')}}" alt="logoTeam"/>
                     </div>
-                    <h4 class="name">German Mariles</h4>
-                    <a href="#">Sign out</a>
+                    <h4 class="name" style="text-align:center">e-Harvest</h4>
+                    <a href="https://www.spaceappschallenge.org/">Space Apps</a>
                 </div>
 
                 <nav class="navbar-sidebar2">
@@ -253,7 +253,19 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="copyright">
-                        <p>2020 - La Fortaleza Asset <a href="https://lafortaleza.com.mx">La Fortaleza</a>.</p>
+                        <p>2020 - Mascabado Team
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/gmariles5">Germán Mariles</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/daniel-millan-2a31781b1">Daniel Millán</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/anna-karen-navarro-padron-9270a11b9">Karen Padrón</a>
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </footer>
@@ -269,27 +281,27 @@
     <script src="{{asset('js/app.min.js')}}"></script>
 
     <!-- Jquery JS-->
-    <script src="{{asset('vendor/jquery-3.2.1.min.js')}}"></script>
+    <script src="/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
-    <script src="{{asset('vendor/bootstrap-4.1/popper.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
+    <script src="/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="/vendor/bootstrap-4.1/bootstrap.min.js"></script>
     <!-- Vendor JS       -->
-    <script src="{{asset('vendor/slick/slick.min.js')}}"></script>
-    <script src="{{asset('vendor/wow/wow.min.js')}}"></script>
-    <script src="{{asset('vendor/animsition/animsition.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
-    <script src="{{asset('vendor/counter-up/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('vendor/counter-up/jquery.counterup.min.js')}}"></script>
-    <script src="{{asset('vendor/circle-progress/circle-progress.min.js')}}"></script>
-    <script src="{{asset('vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
-    <script src="{{asset('vendor/chartjs/Chart.bundle.min.js')}}"></script>
-    <script src="{{asset('vendor/select2/select2.min.js')}}"></script>
-    <script src="{{asset('vendor/vector-map/jquery.vmap.js')}}"></script>
-    <script src="{{asset('vendor/vector-map/jquery.vmap.min.js')}}"></script>
-    <script src="{{asset('vendor/vector-map/jquery.vmap.sampledata.js')}}"></script>
-    <script src="{{asset('vendor/vector-map/jquery.vmap.world.js')}}"></script>
+    <script src="/vendor/slick/slick.min.js"></script>
+    <script src="/vendor/wow/wow.min.js"></script>
+    <script src="/vendor/animsition/animsition.min.js"></script>
+    <script src="/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="/vendor/counter-up/jquery.counterup.min.js"></script>
+    <script src="/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="/vendor/select2/select2.min.js"></script>
+    <script src="/vendor/vector-map/jquery.vmap.js"></script>
+    <script src="/vendor/vector-map/jquery.vmap.min.js"></script>
+    <script src="/vendor/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="/vendor/vector-map/jquery.vmap.world.js"></script>
 
-    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
       $('.date').datepicker({  
         format: 'yyyy-mm-dd'
