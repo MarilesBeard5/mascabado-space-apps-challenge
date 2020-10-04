@@ -36,3 +36,4 @@ Route::get('canadaWheat',  [ycCanadaWheatController::class, 'index'])->name('ind
 Route::get('usaCorn',  [ycUSACornController::class, 'index'])->name('index');
 Route::get('usaRice',  [ycUSARiceController::class, 'index'])->name('index');
 Route::get('usaWheat',  [ycUSAWheatController::class, 'index'])->name('index');
+Route::get('scenarios',  function(Request $request){ return view('scenarios.index');});
