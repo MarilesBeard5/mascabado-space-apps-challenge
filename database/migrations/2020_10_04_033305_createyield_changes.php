@@ -17,7 +17,7 @@ class CreateyieldChanges extends Migration
             $table->integer('contry');
             $table->integer('yearr');
             $table->string('esc');
-            $table->intger('harvest');
+            $table->integer('harvest');
             $table->float('changes');
         });
     }
