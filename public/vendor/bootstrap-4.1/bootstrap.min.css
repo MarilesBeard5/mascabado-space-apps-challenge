@@ -1480,7 +1480,15 @@ pre code {
   margin-bottom: 1rem;
   background-color: transparent;
 }
-.table td,
+.table td {
+  text-align: center;
+  padding: 0px 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  /* Alto de las celdas */
+  height: 0px;
+}
+
 .table th {
   padding: 0.75rem;
   vertical-align: top;
@@ -8225,7 +8233,7 @@ a.text-dark:hover {
   .table {
     border-collapse: collapse !important;
   }
-  .table td,
+  .table td ,
   .table th {
     background-color: #fff !important;
   }

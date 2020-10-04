@@ -153,6 +153,11 @@ h8 {
   font-weight: 300;
   line-height: 1;
 }
+h9 {
+  color: #FFF;
+  font-weight: 300;
+  line-height: 1;
+}
 
 h1 {
   font-size: 36px;
@@ -183,6 +188,9 @@ h7 {
 }
 h8 {
   font-size: 20px;
+}
+h9 {
+  font-size: 70px;
 }
 
 blockquote {
@@ -4605,6 +4613,7 @@ section {
 
 .table-data {
   overflow-y: auto;
+
 }
 
 .table-data thead tr td {
@@ -4634,7 +4643,6 @@ section {
   -o-transform: scale(1);
   transform: scale(1);
 }
-
 .table-data__info h6 {
   font-size: 16px;
   color: #000;

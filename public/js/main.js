@@ -693,29 +693,49 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+          labels: ["2020", "2050", "2080"],
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: "Foods",
-            data: [0, 30, 10, 120, 50, 63, 10],
+            label: "A1",
+            data: [-2.09, -8.05, -18.14],
             backgroundColor: 'transparent',
             borderColor: 'rgba(220,53,69,0.75)',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(220,53,69,0.75)',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
           }, {
-            label: "Electronics",
-            data: [0, 50, 40, 80, 40, 79, 120],
+            label: "A2",
+            data: [-2.57, -1.95, 5.34],
             backgroundColor: 'transparent',
             borderColor: 'rgba(40,167,69,0.75)',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(40,167,69,0.75)',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [-6.39,-6.74,-0.77],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-6.7,-5.97,-4.35],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
           }]
         },
         options: {
