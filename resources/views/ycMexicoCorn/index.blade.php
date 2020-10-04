@@ -6,8 +6,8 @@
 		<div class="filters m-b-10">
 			<nav class="navbar navbar-light">
 				<form class="form-inline">
-					@include('ycCanadaWheat.search')
-					Cultivo de Trigo en Canadá
+					@include('ycMexicoCorn.search')
+					Cultivo de Arroz en Canada
 				</form>
 			</nav>
 		</div>
@@ -81,7 +81,7 @@
 							</td>
 							
 						</tr>
-						@include('ycCanadaWheat.modal')
+						@include('ycMexicoCorn.modal')
 					@endforeach
 
 				</tbody>

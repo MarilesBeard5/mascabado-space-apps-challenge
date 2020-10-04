@@ -1,4 +1,4 @@
-{!! Form::open(array('url'=>'ycCanadaWheat','method'=>'GET','autocomplete'=>'off','role'=>'search')) !!}
+{!! Form::open(array('url'=>'ycMexicoCorn','method'=>'GET','autocomplete'=>'off','role'=>'search')) !!}
 <div class="form-group" >
 
         <select name="buscarporyear" id="select" class="form-control">

@@ -7,7 +7,7 @@ use App\Models\yieldChangesModel;
 use DB;
 use eHarvest\Http\Requests\ChangeFormRequest;
 
-class ycCanadaWheatController extends Controller
+class ycMexicoRiceController extends Controller
 {
     public function index(Request $request) {
     	if($request){
@@ -24,10 +24,10 @@ class ycCanadaWheatController extends Controller
             $tipo = $request->get('buscarportipo');
             $changes = yieldChangesModel::year($year)->tipo($tipo)
             ->where('country','LIKE','1')
-            ->where('harvest','LIKE','1')
+            ->where('harvest','LIKE','2')
             ->orderBy('country','asc')
             ->paginate(12);
-            return view('ycCanadaWheat.index', compact('changes'));
+            return view('ycMexicoRice.index', compact('changes'));
     	}
     }
     public function create(){}
