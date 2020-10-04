@@ -29,6 +29,7 @@ class ycUSAWheatController extends Controller
             ->paginate(12);
             return view('ycUSAWheat.index', compact('changes'));
     	}
+        
     }
     public function create(){}
     public function store(Request $request){}

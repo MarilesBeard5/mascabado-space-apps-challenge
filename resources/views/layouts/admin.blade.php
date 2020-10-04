@@ -11,7 +11,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Visitor Control System</title>
+    <title>HARVEST YIELD CHANGES</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">
@@ -53,86 +53,86 @@
                     <div class="image img-cir img-120">
                         <img src="{{asset('img/icon/avatar-big-01.jpg')}}" alt="German Mariles"  />
                     </div>
-                    <h4 class="name">German Mariles</h4>
-                    <a href="#">Sign out</a>
+                    <h4 class="name">Nasa Space Apps 2020</h4>
                 </div>
 
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="zmdi zmdi-account-box-phone"></i>Directorio
+                                <i class="zmdi zmdi-city"></i>Canada
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="/directorioUsuarios/usuario">
-                                        <i class="zmdi zmdi-accounts"></i> Usuarios</a>
+                                    <a href="/canadaRice">
+                                        <i class="zmdi zmdi-landscape"></i> Rice</a>
                                 </li>
                                 <li>
-                                    <a href="/directorioUsuarios/residente">
-                                        <i class="zmdi zmdi-home"></i> Residentes</a>
+                                    <a href="/canadaWheat">
+                                        <i class="zmdi zmdi-nature"></i> Wheat</a>
                                 </li>
                                 <li>
-                                    <a href="/directorioUsuarios/visitante">
-                                        <i class="zmdi zmdi-car"></i> Visitantes</a>
+                                    <a href="/canadaCorn">
+                                        <i class="zmdi zmdi-landscape"></i> Maize</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="zmdi zmdi-time"></i>Permisos
+                                <i class="zmdi zmdi-city-alt"></i>Mexico
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="/directorioUsuarios/usuario">
-                                        <i class="zmdi zmdi-time-interval"></i>Recurrentes</a>
+                                    <a href="/mexicoRice">
+                                        <i class="zmdi zmdi-landscape"></i> Rice</a>
                                 </li>
                                 <li>
-                                    <a href="/directorioUsuarios/residente">
-                                        <i class="zmdi zmdi-time-countdown"></i>Unicos</a>
+                                    <a href="/mexicoWheat">
+                                        <i class="zmdi zmdi-nature"></i> Wheat</a>
+                                </li>
+                                <li>
+                                    <a href="/mexicoCorn">
+                                        <i class="zmdi zmdi-landscape"></i> Maize</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="zmdi zmdi-calendar-note"></i>Visitas realizadas
+                                <i class="zmdi zmdi-city"></i>USA
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="/directorioUsuarios/usuario">
-                                        <i class="zmdi zmdi-calendar-check"></i>Programadas</a>
+                                    <a href="/usaRice">
+                                        <i class="zmdi zmdi-landscape"></i> Rice</a>
                                 </li>
                                 <li>
-                                    <a href="/directorioUsuarios/residente">
-                                        <i class="zmdi zmdi-calendar-close"></i>No programadas</a>
+                                    <a href="/usaWheat">
+                                        <i class="zmdi zmdi-nature"></i> Wheat</a>
+                                </li>
+                                <li>
+                                    <a href="/usaCorn">
+                                        <i class="zmdi zmdi-landscape"></i> Maize</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-sub">
+                        <li class="active">
                             <a class="js-arrow" href="#">
-                                <i class="zmdi zmdi-nature-people"></i>Áreas comunes
-                                <span class="arrow">
-                                    <i class="fas fa-angle-down"></i>
-                                </span>
+                                <a href="/scenarios">
+                                    <i class="zmdi zmdi-nature-people"></i> Scenario families
+                                </a>
                             </a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="/directorioUsuarios/areaComun">
-                                        <i class="zmdi zmdi-pin"></i>Directorio</a>
-                                </li>
-                                <li>
-                                    <a href="/directorioUsuarios/residente">
-                                        <i class="zmdi zmdi-calendar-alt"></i>Reservaciones</a>
-                                </li>
+                            
+                        </li>
+                        
                             </ul>
                         </li>
                     </ul>

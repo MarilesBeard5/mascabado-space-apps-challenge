@@ -27,7 +27,7 @@ Route::get('/', function () {
 });
 
 /*LA ESTRUCTURA GENERAL DE LAS PETICIONES ES: Router::<metodo>(<url>, <[clase, funcion]>) // OPCIONAL: -> name('para asegurar el nombre del metodo poner el mismo')*/
-Route::get('index',  [yieldChangesController::class, 'index'])->name('index');
+Route::get('mexicoWheat',  [yieldChangesController::class, 'index'])->name('index');
 Route::get('mexicoCorn',  [ycMexicoCornController::class, 'index'])->name('index');
 Route::get('mexicoRice',  [ycMexicoRiceController::class, 'index'])->name('index');
 Route::get('canadaCorn',  [ycCanadaCornController::class, 'index'])->name('index');
@@ -36,3 +36,4 @@ Route::get('canadaWheat',  [ycCanadaWheatController::class, 'index'])->name('ind
 Route::get('usaCorn',  [ycUSACornController::class, 'index'])->name('index');
 Route::get('usaRice',  [ycUSARiceController::class, 'index'])->name('index');
 Route::get('usaWheat',  [ycUSAWheatController::class, 'index'])->name('index');
+Route::get('scenarios',  function(Request $request){ return view('scenarios.index');});
