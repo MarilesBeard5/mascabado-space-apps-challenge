@@ -684,10 +684,360 @@
   } catch (error) {
     console.log(error);
   }
-
   try {
-    //Sales chart
-    var ctx = document.getElementById("sales-chart");
+    //CanadaCorn 
+    var ctx = document.getElementById("canadaCorn-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [-0.03, 2.69, 4.16],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.1, 2.18, 3.51],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [-1.46,-0.29,-0.78],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.65,-0.48,2.66],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+    try {
+    //CanadaWheat
+    var ctx = document.getElementById("canadaWheat-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [6.53, 3.19, 1.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [2.52, 8.45, 7.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [2.81,4.44,3.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [1.62,4.5,5.28],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+    try {
+    //CanadaRice
+    var ctx = document.getElementById("canadaRice-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [4.53, 2.19, 0.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.52, 6.45, 6.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [0.81,3.44,0.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.38,3.5,2.66],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+  try {
+    //Mexico wheat
+    var ctx = document.getElementById("mexicoWheat-chart");
     if (ctx) {
       ctx.height = 150;
       var myChart = new Chart(ctx, {
@@ -781,7 +1131,7 @@
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Value',
+                labelString: '% Change',
                 fontFamily: "Poppins"
 
               },
@@ -802,7 +1152,591 @@
   } catch (error) {
     console.log(error);
   }
+  try {
+    //Mexico rice
+    var ctx = document.getElementById("mexicoRice-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [4.53,2.19,0.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.52,6.45,6.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [0.81,3.44,0.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.38,3.5,4.28],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
 
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+try {
+    //Mexico corn
+    var ctx = document.getElementById("mexicoCorn-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [-5.78,-10.21,-2.81],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [-5.37,-7.09,-4.37],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [-6.22,-8.96,-8.11],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-7.38,-9.25,-6.7],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+try {
+    //USA corn
+    var ctx = document.getElementById("usaCorn-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [4.53,2.19,0.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.52,6.45,6.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [0.81,3.44,0.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.38,3.5,4.28],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+  try {
+    //USA rice
+    var ctx = document.getElementById("usaRice-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [4.53,2.19,0.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.52,6.45,6.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [0.81,3.44,0.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.38,3.5,4.28],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+try {
+    //USA wheat
+    var ctx = document.getElementById("usaWheat-chart");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2020", "2050", "2080"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "A1",
+            data: [4.53,2.19,0.45],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)', /* rojo*/
+          }, {
+            label: "A2",
+            data: [0.52,6.45,6.62],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)', /*verde*/
+          }, {
+            label: "B1",
+            data: [0.81,3.44,0.53],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,255,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,255,0.75)',/*azul*/
+          }, {
+            label: "B2",
+            data: [-0.38,3.5,4.28],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(167,20,167,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(167,20,167,0.75)', /*morado*/
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% Change',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
   try {
 
     //Team chart

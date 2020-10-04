@@ -11,7 +11,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Visitor Control System</title>
+    <title>HARVEST YIELD CHANGES</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">
@@ -92,7 +92,7 @@
                                         <i class="zmdi zmdi-landscape"></i> Rice</a>
                                 </li>
                                 <li>
-                                    <a href="/mexicoWheat">
+                                    <a href="/yieldChanges">
                                         <i class="zmdi zmdi-nature"></i> Wheat</a>
                                 </li>
                                 <li>
@@ -128,9 +128,7 @@
                                 <a href="/scenarios">
                                     <i class="zmdi zmdi-nature-people"></i> Scenario families
                                 </a>
-                            </a>
-                        </li>
-                            </ul>
+                            </a>       
                         </li>
                     </ul>
                 </nav>

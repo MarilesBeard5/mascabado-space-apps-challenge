@@ -7,7 +7,7 @@ use App\Models\yieldChangesModel;
 use DB;
 use eHarvest\Http\Requests\ChangeFormRequest;
 
-class ycCanadaRiceController extends Controller
+class ycCanadaCornController extends Controller
 {
     public function index(Request $request) {
     	if($request){
@@ -27,7 +27,7 @@ class ycCanadaRiceController extends Controller
             ->where('harvest','LIKE','3')
             ->orderBy('country','asc')
             ->paginate(12);
-            return view('ycCanadaRice.index', compact('changes'));
+            return view('ycCanadaCorn.index', compact('changes'));
     	}
     }
     public function create(){}

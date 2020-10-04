@@ -16,7 +16,7 @@
 		            <div>WHEAT YIELD CHANGE
 		            </div>
 		            <h9>-</h9>
-		            <canvas id="sales-chart"></canvas>
+		            <canvas id="mexicoWheat-chart"></canvas>
             </div>
         </div>
 		<div class="table-responsive table-data col-lg-5" style="width:auto ;height:510px;">
@@ -33,49 +33,10 @@
 				<tbody>		
 					@foreach ($changes as $c)										
 						<tr>
-							<!--<td>
-								<span>
-								@if($c -> country == 1)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> Canada
-									</span>
-								@endif
-								@if($c -> country == 2)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> México
-									</span>
-								@endif
-								@if($c -> country == 3)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> Estados Unidos
-									</span>
-								@endif
-								</span>
-							</td>
-							-->
 							<td>{{ $c -> yearr}}
 							</td>
 							<td>{{ $c -> esc}}
 							</td>
-							<!--
-							<td>
-								@if($c -> harvest == 1)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> Arroz
-									</span>
-								@endif
-								@if($c -> harvest == 2)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> Maiz
-									</span>
-								@endif
-								@if($c -> harvest == 3)
-									<span class="role residente">
-										<i class="zmdi zmdi-home"></i> Trigo
-									</span>
-								@endif
-							</td>
-						-->
 							<td>
 								
 								{{ $c -> changes}}
