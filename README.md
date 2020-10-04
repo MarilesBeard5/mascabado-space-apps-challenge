@@ -20,6 +20,7 @@ Create a file named ".env" in the root folder of the project and use the informa
   <li>composer install</li>
   <li>php artisan key:generate</li>
   <li>php artisan db:seed</li>
+  <li>php artisan migrate</li>
   <li>php artisan storage:link</li>
   <li>php artisan serve</li>
 </ul>
