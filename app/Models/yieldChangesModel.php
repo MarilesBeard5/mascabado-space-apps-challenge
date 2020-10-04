@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class yieldChangesModel extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'country',
+        'yearr',
+        'esc',
+        'harvest',
+        'changes',
+    ];
 }
