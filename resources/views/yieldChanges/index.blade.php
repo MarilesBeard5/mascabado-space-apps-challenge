@@ -6,7 +6,8 @@
 		<div class="filters m-b-10">
 			<nav class="navbar navbar-light">
 				<form class="form-inline">
-					@include('yieldChanges.search');
+					@include('yieldChanges.search')
+					Cultivo de trigo en mexico
 				</form>
 			</nav>
 		</div>
@@ -14,22 +15,36 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<td>Country</td>
+						<!--<td>Country</td>-->
 						<td>Year</td>
 						<td>ESC</td>
-						<td>Harvest</td>
+						<!--<td>Harvest</td>-->
 						<td>Changes</td>
-						<td>Options</td>
 					</tr>
 				</thead>
 				<tbody>		
 					@foreach ($changes as $c)										
 						<tr>
-							<td>
+							<!--<td>
 								<span>
-									<i class="zmdi zmdi-home"></i> {{ $c -> country}}
+								@if($c -> country == 1)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> Canada
+									</span>
+								@endif
+								@if($c -> country == 2)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> México
+									</span>
+								@endif
+								@if($c -> country == 3)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> Estados Unidos
+									</span>
+								@endif
 								</span>
 							</td>
+							-->
 							<td>
 								<span>
 									<i class="zmdi zmdi-home"></i> {{ $c -> yearr}}
@@ -40,26 +55,31 @@
 									<i class="zmdi zmdi-home"></i> {{ $c -> esc}}
 								</span>
 							</td>
+							<!--
 							<td>
-								<span>
-									<i class="zmdi zmdi-home"></i> {{ $c -> harvest}}
-								</span>
+								@if($c -> harvest == 1)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> Arroz
+									</span>
+								@endif
+								@if($c -> harvest == 2)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> Maiz
+									</span>
+								@endif
+								@if($c -> harvest == 3)
+									<span class="role residente">
+										<i class="zmdi zmdi-home"></i> Trigo
+									</span>
+								@endif
 							</td>
+						-->
 							<td>
 								<span>
 									<i class="zmdi zmdi-home"></i> {{ $c -> changes}}
 								</span>
 							</td>
-							<td>
-								<button class= "btn btn-primary" type="button">
-									<i class="zmdi zmdi-delete"></i> Borrar
-								</button>
-								<a href="" >
-									<button class= "btn btn-primary"  role="button">
-										<i class="zmdi zmdi-edit"></i> Editar
-									</button>
-								</a>
-							</td>
+							
 						</tr>
 						@include('yieldChanges.modal')
 					@endforeach

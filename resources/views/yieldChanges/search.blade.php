@@ -1,21 +1,22 @@
 {!! Form::open(array('url'=>'yieldChanges','method'=>'GET','autocomplete'=>'off','role'=>'search')) !!}
 <div class="form-group" >
-        <select name="buscarpor" id="select" class="form-control">
-            <option value="0">Todos</option>
-            <option value="1">Residente</option>
-            <option value="2">Guardia</option>
-            <option value="3">Administrador</option>
-            <option value="4">Proveedor</option>
+
+        <select name="buscarporyear" id="select" class="form-control">
+            <option value="0">Año</option>
+            <option value="2020">2020</option>
+            <option value="2050">2050</option>
+            <option value="2080">2080</option>
         </select>
-            <input name="buscarporapellido" class="form-control col-lg-4" type="search" placeholder="Nombre, correo, dirección..." aria-label="Search">
+        <select name="buscarportipo" id="select" class="form-control">
+            <option value="0">Escenario</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+        </select>
 
         <button class="btn btn-outline-primary" type="submit"><i class="zmdi zmdi-search"></i> Buscar</button>
   
-        <a href="usuario/create" >
-            <button class= "btn btn-primary"  role="button">
-                <i class="zmdi zmdi-plus"></i> Nuevo Usuario
-            </button>
-        </a>
 </div>
 
 {{Form::close()}}
