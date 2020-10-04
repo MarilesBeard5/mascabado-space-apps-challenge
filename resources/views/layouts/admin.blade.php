@@ -45,15 +45,16 @@
         <aside class="menu-sidebar2">
             <div class="logo">
                 <a href="#">
-                    <img src="{{asset('img/icon/logoFortaleza.png')}}" alt="La Fortaleza" />
+                    <img src="{{asset('img/logo.jpeg')}}" alt="logoNASA" />
                 </a>
             </div>
             <div class="menu-sidebar2__content js-scrollbar1">
                 <div class="account2">
-                    <div class="image img-cir img-120">
-                        <img src="{{asset('img/icon/avatar-big-01.jpg')}}" alt="German Mariles"  />
+                    <div class="image img-cir img-custom">
+                        <img src="{{asset('img/MASCABADO.jpg')}}" alt="logoTeam"/>
                     </div>
-                    <h4 class="name">Nasa Space Apps 2020</h4>
+                    <h4 class="name" style="text-align:center">e-Harvest</h4>
+                    <a href="https://www.spaceappschallenge.org/">Space Apps</a>
                 </div>
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
@@ -92,7 +93,7 @@
                                         <i class="zmdi zmdi-landscape"></i> Rice</a>
                                 </li>
                                 <li>
-                                    <a href="/yieldChanges">
+                                    <a href="/mexicoWheat">
                                         <i class="zmdi zmdi-nature"></i> Wheat</a>
                                 </li>
                                 <li>
