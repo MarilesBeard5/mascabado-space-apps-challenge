@@ -14,16 +14,16 @@ Contributors need to meet the following requirements to start working with this 
 To access to this git repository contributors will need <a href="https://git-scm.com/downloads" target="_blank">Git.</a>
 
 ## Project Configuration
-Create a file named ".env" in the root folder of the project and use the information on the "example.env" file and save the file.
+Create a file named ".env" in the root folder of the project, use the information on the "example.env" file and save.
 
-<ul>
-  <li>composer install</li>
-  <li>php artisan key:generate</li>
-  <li>php artisan db:seed</li>
-  <li>php artisan migrate</li>
-  <li>php artisan storage:link</li>
-  <li>php artisan serve</li>
-</ul>
+``
+composer install
+php artisan key:generate
+php artisan db:seed
+php artisan migrate
+php artisan storage:link
+php artisan serve
+``
 
 ## Database Integration
 ...In development...
