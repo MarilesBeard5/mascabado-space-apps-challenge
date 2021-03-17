@@ -18,10 +18,16 @@ Create a file named ".env" in the root folder of the project, use the informatio
 
 ``
 composer install
+``
 php artisan key:generate
+``
 php artisan db:seed
+``
 php artisan migrate
+``
 php artisan storage:link
+``
+``
 php artisan serve
 ``
 
